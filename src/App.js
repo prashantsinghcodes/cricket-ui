@@ -32,7 +32,7 @@ class App extends React.Component {
     console.log(summaryList)
 		return (
 		<div className = "App">
-			<h1> Fetch data from an api in react </h1> {
+			<h1> Match summary </h1> {
 				summaryList.map((summary) => (
 				<ol key = { summary['team']['team_name'] } >
 					{ summary['team']['team_name'] } - {summary['team']['team_score']}/{summary['team']['total_wickets_fallen']} ({summary['team']['overs_played']})
